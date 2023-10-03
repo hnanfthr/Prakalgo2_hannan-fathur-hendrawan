@@ -1,0 +1,78 @@
+# Nama
+print ("@   @          @           @@    @     @@    @         @          @     @")
+print ("@   @        @  @          @ @   @     @ @   @        @  @        @ @   @")
+print ("@@@@@       @@@@@@         @  @  @     @  @  @       @ @@ @       @  @  @")
+print ("@   @      @      @        @   @ @     @   @ @      @      @      @   @ @")
+print ("@   @     @       @        @    @@     @    @@     @        @     @     @")
+
+
+# Menerima input dari pengguna
+angka_awal = int(input("Masukkan angka awal: "))
+angka_akhir = int(input("Masukkan angka akhir: "))
+
+# Memastikan angka awal lebih kecil dari angka akhir
+if angka_awal > angka_akhir:
+    angka_awal, angka_akhir = angka_akhir, angka_awal
+
+# Menampilkan angka dengan urutan yang dimodifikasi menggunakan while
+i = angka_awal
+j = angka_akhir
+
+while i <= j:
+    print(f"{i} | {j}")
+    i += 1
+    j -= 1
+
+# Nama
+print ("@   @          @           @@    @     @@    @         @          @     @")
+print ("@   @        @  @          @ @   @     @ @   @        @  @        @ @   @")
+print ("@@@@@       @@@@@@         @  @  @     @  @  @       @ @@ @       @  @  @")
+print ("@   @      @      @        @   @ @     @   @ @      @      @      @   @ @")
+print ("@   @     @       @        @    @@     @    @@     @        @     @     @")
+
+
+# Menerima input dari pengguna
+total_harga = float(input("Total harga belanjaan: Rp "))
+jumlah_uang = float(input("Jumlah uang yang diberikan: Rp "))
+
+# Menghitung kembalian
+kembalian = jumlah_uang - total_harga
+
+# Menampilkan kembalian
+print("Kembalian Anda adalah: Rp", kembalian)
+
+# Menentukan berapa banyak uang lembar yang diberikan sebagai kembalian
+if kembalian >= 100000:
+    lembar_100000 = kembalian // 100000
+    kembalian = kembalian % 100000
+    print("Lembar Rp 100.000:", int(lembar_100000))
+
+if kembalian >= 50000:
+    lembar_50000 = kembalian // 50000
+    kembalian = kembalian % 50000
+    print("Lembar Rp 50.000:", int(lembar_50000))
+
+if kembalian >= 20000:
+    lembar_20000 = kembalian // 20000
+    kembalian = kembalian % 20000
+    print("Lembar Rp 20.000:", int(lembar_20000))
+
+if kembalian >= 10000:
+    lembar_10000 = kembalian // 10000
+    kembalian = kembalian % 10000
+    print("Lembar Rp 10.000:", int(lembar_10000))
+
+if kembalian >= 5000:
+    lembar_5000 = kembalian // 5000
+    kembalian = kembalian % 5000
+    print("Lembar Rp 5.000:", int(lembar_5000))
+
+if kembalian >= 2000:
+    lembar_2000 = kembalian // 2000
+    kembalian = kembalian % 2000
+    print("Lembar Rp 2.000:", int(lembar_2000))
+
+if kembalian >= 1000:
+    lembar_1000 = kembalian // 1000
+    kembalian = kembalian % 1000
+    print("Lembar Rp 1.000:", int(lembar_1000))
